@@ -136,4 +136,82 @@ public class HazelCastAsyncExecutor implements AsyncExecutor {
 		
 	}
 
+    @Override
+    public String getLockOwner() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public int getTimerLockTimeInMillis() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void setTimerLockTimeInMillis(int lockTimeInMillis) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public int getAsyncJobLockTimeInMillis() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void setAsyncJobLockTimeInMillis(int lockTimeInMillis) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public int getDefaultTimerJobAcquireWaitTimeInMillis() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void setDefaultTimerJobAcquireWaitTimeInMillis(int waitTimeInMillis) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public int getDefaultAsyncJobAcquireWaitTimeInMillis() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void setDefaultAsyncJobAcquireWaitTimeInMillis(int waitTimeInMillis) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public int getMaxAsyncJobsDuePerAcquisition() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void setMaxAsyncJobsDuePerAcquisition(int maxJobs) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public int getMaxTimerJobsPerAcquisition() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public void setMaxTimerJobsPerAcquisition(int maxJobs) {
+        // TODO Auto-generated method stub
+        
+    }
+
 }

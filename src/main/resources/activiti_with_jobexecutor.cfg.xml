@@ -7,10 +7,10 @@
 	<!-- Tomcat connection pooling -->
 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource"
 		destroy-method="close">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/activiti_job?characterEncoding=UTF-8" />
-		<property name="username" value="activiti" />
-		<property name="password" value="activiti" />
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/activiti_async" />
+        <property name="username" value="postgres" />
+        <property name="password" value="postgres" />
 		<property name="initialSize" value="25" />
 		<property name="maxActive" value="500" />
 		<property name="maxIdle" value="50" />
@@ -37,7 +37,7 @@
 		<!-- <property name="jobExecutor" ref="myJobExecutor" /> -->
 		
 		<!-- <property name="asyncExecutor" ref="defaultAsyncExecutor" /> -->
-		<property name="asyncExecutor" ref="hazelCastAsyncExecutor" /> 
+		<property name="asyncExecutor" ref="asyncExecutor" /> 
 		<property name="asyncExecutorEnabled" value="true" />
 		<property name="asyncExecutorActivate" value="true" />
 
@@ -54,7 +54,7 @@
  	<!-- <bean id="hazelCastAsyncExecutor" class="org.activiti.HazelCastAsyncExecutor">
 	</bean> -->
 	
-	<bean id="hazelCastAsyncExecutor" class="org.activiti.HazelCastAsyncExecutor2">
+	<bean id="asyncExecutor" class="org.activiti.engine.impl.asyncexecutor.DefaultAsyncJobExecutor">
 	</bean>
 	
 

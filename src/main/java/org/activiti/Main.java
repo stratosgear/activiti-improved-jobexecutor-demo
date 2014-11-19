@@ -6,7 +6,6 @@ import java.util.concurrent.Executors;
 
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngineConfiguration;
-import org.junit.Assert;
 
 public class Main {
 	
