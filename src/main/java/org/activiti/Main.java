@@ -192,6 +192,12 @@ public class Main {
 		
 		public void run() {
 			processEngine.getRuntimeService().startProcessInstanceByKey("job");
+            try {
+                Thread.sleep(500L);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } // Doing some sleeps to mimic I/O
 		}
 
 	}
